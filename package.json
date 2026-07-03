@@ -1,0 +1,91 @@
+{
+  "name": "trkit",
+  "version": "0.0.1",
+  "description": "Zero-dependency Turkish utility kit: validation, formatting and conversion helpers. Türkiye'ye özgü doğrulama, formatlama ve dönüşüm fonksiyonları.",
+  "keywords": [
+    "turkish",
+    "turkey",
+    "tckn",
+    "tc-kimlik",
+    "vkn",
+    "iban",
+    "validation",
+    "kvkk",
+    "utils",
+    "typescript",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "author": "Berkay Yalçın (https://berkayyalcin.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berkayyalcin7/trkit.git"
+  },
+  "homepage": "https://berkayyalcin.dev/projects/trkit",
+  "bugs": "https://github.com/berkayyalcin7/trkit/issues",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "data": [
+        "./dist/data.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./data": {
+      "import": {
+        "types": "./dist/data.d.ts",
+        "default": "./dist/data.js"
+      },
+      "require": {
+        "types": "./dist/data.d.cts",
+        "default": "./dist/data.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run lint && npm run typecheck && npm run test:coverage && npm run build && publint && attw --pack .",
+    "changeset": "changeset",
+    "release": "npm run build && changeset publish"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.4",
+    "@biomejs/biome": "^2.5.2",
+    "@changesets/cli": "^2.31.0",
+    "@vitest/coverage-v8": "^3.2.6",
+    "publint": "^0.3.21",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.6"
+  }
+}

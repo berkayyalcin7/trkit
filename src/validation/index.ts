@@ -1,0 +1,6 @@
+export { isValidTRIban } from './iban'
+export { isValidTRPhone, normalizeTRPhone, type TRPhoneType } from './phone'
+export { isValidPlate } from './plate'
+export { isValidPostalCode } from './postal-code'
+export { isValidTCKN } from './tckn'
+export { isValidVKN } from './vkn'

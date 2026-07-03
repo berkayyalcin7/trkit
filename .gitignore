@@ -1,0 +1,26 @@
+# Bağımlılıklar ve build çıktıları
+node_modules/
+dist/
+coverage/
+
+# Ortam / gizli dosyalar — repoya asla girmez
+.env
+.env.*
+*.pem
+*.key
+
+# Kişisel plan ve not dosyaları (GitHub'da görünmez)
+ROADMAP*.md
+NOTES*.md
+notes/
+*.private.*
+
+# Editör / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Loglar
+*.log
+npm-debug.log*
