@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/berkayyalcin7/trkit.git"
   },
-  "homepage": "https://berkayyalcin.dev/projects/trkit",
+  "homepage": "https://berkayyalcin.dev/araclar/trkit",
   "bugs": "https://github.com/berkayyalcin7/trkit/issues",
   "type": "module",
   "sideEffects": false,
