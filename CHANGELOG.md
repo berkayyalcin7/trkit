@@ -1,5 +1,11 @@
 # trkit
 
+## 0.1.1
+
+### Patch Changes
+
+- bf03399: Package homepage now points to the live playground: https://berkayyalcin.dev/araclar/trkit
+
 ## 0.1.0
 
 ### Minor Changes
