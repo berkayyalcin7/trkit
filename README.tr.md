@@ -85,6 +85,18 @@ getCityByPlate(34)?.name // 'İstanbul'
 | `numberToOrdinalTR(value)` | `4` → `'dördüncü'` |
 | `addKDV(net, rate)` / `removeKDV(gross, rate)` / `splitKDV(gross, rate)` | KDV hesapları; oran her zaman parametredir |
 
+### Tarih ve iş günü
+
+| Fonksiyon | Açıklama |
+|-----------|----------|
+| `getHolidaysTR(year)` | Resmî + dini tatiller, tarih sıralı — 2020–2030, Diyanet takvimiyle doğrulanmış |
+| `isHolidayTR(date, options?)` | Yarım günler (arife, 28 Ekim) `includeHalfDays` ile dahil edilir |
+| `isWorkingDayTR(date)` | Hafta sonu ve tam gün tatiller iş günü değildir; yarım günler iş günüdür |
+| `addWorkingDaysTR(date, n)` | Termin hesabı — hafta sonu ve tatilleri atlar, negatif n geriye gider |
+
+Desteklenen yıl aralığının dışında bu fonksiyonlar tahmin etmek yerine `null` döner —
+dini bayram tarihleri yalnızca resmi kaynaklardan doğrulandıktan sonra pakete eklenir.
+
 ### İl verisi — `trkit/data`
 
 | Fonksiyon | Açıklama |

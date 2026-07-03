@@ -87,6 +87,18 @@ getCityByPlate(34)?.name // 'İstanbul'
 | `numberToOrdinalTR(value)` | `4` → `'dördüncü'` |
 | `addKDV(net, rate)` / `removeKDV(gross, rate)` / `splitKDV(gross, rate)` | VAT math; rate is always a parameter |
 
+### Dates & working days
+
+| Function | Description |
+|----------|-------------|
+| `getHolidaysTR(year)` | Official + religious holidays, sorted — 2020–2030, verified against the Diyanet calendar |
+| `isHolidayTR(date, options?)` | Half days (arife, Oct 28) are opt-in via `includeHalfDays` |
+| `isWorkingDayTR(date)` | Weekends and full-day holidays are non-working; half days count as working |
+| `addWorkingDaysTR(date, n)` | Deadline math — skips weekends and holidays, negative n goes backwards |
+
+Outside the supported year range these functions return `null` instead of guessing —
+religious holiday dates are only shipped after verification against official sources.
+
 ### Province data — `trkit/data`
 
 | Function | Description |
