@@ -1,6 +1,6 @@
 {
   "name": "trkit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Zero-dependency Turkish utility kit: validation, formatting and conversion helpers. Türkiye'ye özgü doğrulama, formatlama ve dönüşüm fonksiyonları.",
   "keywords": [
     "turkish",
