@@ -1,4 +1,5 @@
 export * from './convert'
+export * from './date'
 export * from './finance'
 export * from './format'
 export * from './string'
