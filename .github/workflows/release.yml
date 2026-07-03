@@ -22,6 +22,8 @@ jobs:
           node-version: 22
           cache: npm
           registry-url: https://registry.npmjs.org
+      # OIDC trusted publishing npm >= 11.5 gerektirir; Node 22 npm 10 ile gelir
+      - run: npm install -g npm@latest
       - run: npm ci
       - run: npm run verify
       - name: Create release PR or publish to npm
