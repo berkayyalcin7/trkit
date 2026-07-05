@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/berkayyalcin7/trkit/actions/workflows/ci.yml/badge.svg)](https://github.com/berkayyalcin7/trkit/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/trkit.svg)](https://www.npmjs.com/package/trkit)
+[![npm downloads](https://img.shields.io/npm/dm/trkit.svg)](https://www.npmjs.com/package/trkit)
 [![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/berkayyalcin7/trkit/actions/workflows/ci.yml)
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/trkit)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
